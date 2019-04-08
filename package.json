@@ -1,0 +1,16 @@
+{
+  "name": "worker-unit-test",
+  "version": "1.0.0",
+  "description": "Unit Testing Worker Functions",
+  "main": "worker.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Chris Wang (contact@chriswang.tech)",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@dollarshaveclub/cloudworker": "0.0.11",
+    "mocha": "^6.1.1"
+  }
+}
