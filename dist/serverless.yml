@@ -1,0 +1,22 @@
+service:
+    name: chriswang-me
+
+provider:
+  name: cloudflare
+  config:
+    accountId: 78ab5493f4bafb4b7b027542995bb87d
+    zoneId: 2a0086b5c6e89ce13797f1af8c8fa88a
+
+plugins:
+  - serverless-cloudflare-workers
+
+functions:
+  unittest:
+    name: unittest
+    script: bundle
+    events:
+      - http:
+          url: httpbin.chriswang.me/anything/unittest
+          method: GET
+          headers:
+            accept: application/json

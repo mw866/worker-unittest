@@ -4,13 +4,18 @@
   "description": "Unit Testing Worker Functions",
   "main": "worker.js",
   "scripts": {
-    "test": "mocha"
+    "build": "webpack --config webpack.mocha.config.js -p --progress --colors"
   },
   "author": "Chris Wang (contact@chriswang.tech)",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "@dollarshaveclub/cloudworker": "0.0.11",
-    "mocha": "^6.1.1"
+    "exports-loader": "^0.7.0",
+    "mocha": "^6.1.4",
+    "mocha-loader": "git+https://github.com/obezuk/mocha-loader.git",
+    "serverless": "^1.41.1",
+    "serverless-cloudflare-workers": "^1.2.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
   }
 }
